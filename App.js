@@ -1,10 +1,15 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { Button, Icon } from "react-native-elements";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Perez Comercio</Text>
+      <Text>Perez Comercioo</Text>
+      <Button
+        loading={true}
+        title="Button with icon component"
+      />
     </View>
   );
 }
@@ -12,8 +17,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });
