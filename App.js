@@ -1,24 +1,9 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { Button, Icon } from "react-native-elements";
+import Navigation from './app/navigations/Navigation';
+import {firebaseApp} from './app/utils/Firebase';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Perez Comercioo</Text>
-      <Button
-        loading={true}
-        title="Button with icon component"
-      />
-    </View>
+    <Navigation/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
